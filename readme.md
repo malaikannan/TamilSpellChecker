@@ -25,22 +25,25 @@ Bloom Filter is a space efficient and compute optimized probablistic datastructu
 
 To generate Bloom Filter file use the below command 
 
-,,,sh
+,,,
 python TamilBloomFilterCreator.py
 ,,,
 
 ## Sample code to check whether a word is valid tamil word
 
-,,,sh
+,,,
 from TamilwordChecker import TamilwordChecker
+,,,
 unique_word_count = 2043478
+,,,
 tamilwordchecker = TamilwordChecker(unique_word_count,"tamil_bloom_filter.txt")
+,,,
 print(tamilwordchecker.tamil_word_exists("மேகம்"))
 ,,,
 
 ## Sample code to check get spell check corrections 
 
-,,,sh
+,,,
 from TamilSpellingAutoCorrect import TamilSpellingAutoCorrect
 spellchecker  = TamilSpellingAutoCorrect("tamil_bloom_filter.txt","tamilwordlist.txt")
 from_spell_checker_list = spellchecker.tamil_correct_spelling("மேக்ம்")
