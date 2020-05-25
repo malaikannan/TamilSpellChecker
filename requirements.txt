@@ -1,0 +1,7 @@
+beautifulsoup4==4.8.2
+bitarray==1.2.2
+jellyfish==0.7.2
+mmh3==2.5.1
+Open-Tamil==0.96
+requests==2.22.0
+urllib3==1.25.6
