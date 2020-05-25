@@ -47,5 +47,9 @@ from_spell_checker_list = spellchecker.tamil_correct_spelling("மேக்ம�
 print(from_spell_checker_list)
 ```
 
+## Accuracy Issues
+
+Accuracy of Tamilwordchecker depends on the list of unique words that is there in tamilwordlist.txt. Need to add more unique words from other sources. 
+
 
 
