@@ -75,7 +75,7 @@ if __name__ == "__main__":
     
     base_url = "https://www.projectmadurai.org"
     sub_url = "/pmworks.html"
-    wordlist_file_name = "tamilwordlist_text.txt"
+    wordlist_file_name = "tamilwordlist.txt"
 
 
     crawler  = ProjectMaduraiCrawler(base_url,sub_url,wordlist_file_name)

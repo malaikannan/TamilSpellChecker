@@ -3,7 +3,8 @@ import unittest
 from TamilwordChecker import TamilwordChecker
 
 #####To check whether word exist or not using Bloom Filter ############
-tamilwordchecker = TamilwordChecker(2043478,"tamil_bloom_filter.txt")
+unique_word_count = 2043478
+tamilwordchecker = TamilwordChecker(unique_word_count,"tamil_bloom_filter.txt")
 assert tamilwordchecker.tamil_word_exists("மேகம்") == True, "Bloom Filter file is not proper"
 print(tamilwordchecker.tamil_word_exists("மேகம்"))
 
