@@ -35,4 +35,6 @@ if __name__ == "__main__":
     average_time = total_time_diff/number_of_words
     print(f"Average time taken to check word exist or not for {number_of_words} words is {average_time}")
     
-    #Average time taken to check word exist or not for 10000 words is 0.032965399999999485
+    #Average time taken to check word exist or not for 10000 words is 0.006433299999999868
+    #Average time taken to check word exist or not for 10000 words is 0.0062012000000001176
+    #Average time taken to check word exist or not for 10000 words is 0.005943499999999795
