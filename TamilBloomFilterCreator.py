@@ -39,7 +39,7 @@ class TamilBLoomFilterCreator:
 
 if __name__ == "__main__":
     
-    bloomcreator  = TamilBLoomFilterCreator("0.001","tamil_bloom_filter_test1.txt","tamilwordlist.txt")
+    bloomcreator  = TamilBLoomFilterCreator("0.001","tamil_bloom_filter_allwords.txt","unique_sorted_words_in_words_master.txt")
     bloomcreator.create_bloomfilter_file()
 
 

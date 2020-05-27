@@ -1,6 +1,7 @@
 import os
 import traceback
 from bloomfilter import BloomFilter
+import datetime
 
 class TamilwordChecker:
 
@@ -16,6 +17,24 @@ class TamilwordChecker:
     
 
 if __name__ == "__main__":
-    tamilwordchecker = TamilwordChecker(2043478,"tamil_bloom_filter.txt")
-    print(tamilwordchecker.tamil_word_exists("மேகம்"))    
+    tamilwordchecker = TamilwordChecker(2392064,"tamil_bloom_filter_allwords.txt")
+    start_time = datetime.datetime.now()
+    print(" மேகம் tamil word exists : ",tamilwordchecker.tamil_word_exists("மேகம்"))    
+    end_time = datetime.datetime.now()
+    time_diff = (end_time - start_time)
+    execution_time = time_diff.total_seconds() * 1000
+    print("Time taken to check மேகம் exist or not in milli seconds ", execution_time)
+    start_time = datetime.datetime.now()
+    print("தமிழ் tamil word exists : ",tamilwordchecker.tamil_word_exists("தமிழ்"))    
+    end_time = datetime.datetime.now()
+    time_diff = (end_time - start_time)
+    execution_time = time_diff.total_seconds() * 1000
+    print("Time taken to check தமிழ் exist or not in milli seconds ", execution_time)
+    start_time = datetime.datetime.now()
+    print("டாமில் tamil word exists : ",tamilwordchecker.tamil_word_exists("டாமில்"))    
+    print(tamilwordchecker.tamil_word_exists("டாமில்"))    
+    end_time = datetime.datetime.now()
+    time_diff = (end_time - start_time)
+    execution_time = time_diff.total_seconds() * 1000
+    print("Time taken to check hello exist or not in milli seconds ", execution_time)
     
