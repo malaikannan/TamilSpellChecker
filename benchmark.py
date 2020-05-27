@@ -19,8 +19,9 @@ def read_tamil_words_list_file(tamil_unique_word_list_file_path,benchmark_count)
 
 if __name__ == "__main__":
     number_of_words = 10000
+    total_number_of_words = 2392064
     ta_words_unique = read_tamil_words_list_file("unique_sorted_words_in_words_master.txt",number_of_words)
-    tamilwordchecker = TamilwordChecker(2392064,"tamil_bloom_filter_allwords.txt")
+    tamilwordchecker = TamilwordChecker(total_number_of_words,"tamil_bloom_filter_allwords.txt")
     total_time_diff = 0
     for word in ta_words_unique:
         start_time = datetime.datetime.now()
@@ -33,8 +34,8 @@ if __name__ == "__main__":
         #print(f"Time taken to check {word} exist or not in milli seconds ", execution_time)
 
     average_time = total_time_diff/number_of_words
-    print(f"Average time taken to check word exist or not for {number_of_words} words is {average_time}")
+    print(f"Total Number of words in Vocublary is {total_number_of_words} and Average time taken to check word exist or not for {number_of_words} words is {average_time}")
     
-    #Average time taken to check word exist or not for 10000 words is 0.006433299999999868
-    #Average time taken to check word exist or not for 10000 words is 0.0062012000000001176
-    #Average time taken to check word exist or not for 10000 words is 0.005943499999999795
+    #Total Number of words in Vocublary is 2392064 and Average time taken to check word exist or not for 10000 words is 0.006778699999999993
+    #Total Number of words in Vocublary is 2392064 and Average time taken to check word exist or not for 10000 words is 0.00582310000000067
+    #Total Number of words in Vocublary is 2392064 and Average time taken to check word exist or not for 10000 words is 0.006897899999999907
