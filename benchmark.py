@@ -34,8 +34,8 @@ if __name__ == "__main__":
         #print(f"Time taken to check {word} exist or not in milli seconds ", execution_time)
 
     average_time = total_time_diff/number_of_words
-    print(f"Total Number of words in Vocublary is {total_number_of_words} and Average time taken to check word exist or not for {number_of_words} words is {average_time}")
+    print(f"Total Number of words in Vocublary is {total_number_of_words} and Average time taken to check word exist or not for {number_of_words} words is {average_time} milliseconds")
     
-    #Total Number of words in Vocublary is 2392064 and Average time taken to check word exist or not for 10000 words is 0.006778699999999993
-    #Total Number of words in Vocublary is 2392064 and Average time taken to check word exist or not for 10000 words is 0.00582310000000067
-    #Total Number of words in Vocublary is 2392064 and Average time taken to check word exist or not for 10000 words is 0.006897899999999907
+    #Total Number of words in Vocublary is 2392064 and Average time taken to check word exist or not for 10000 words is 0.006449199999999869 milliseconds
+    #Total Number of words in Vocublary is 2392064 and Average time taken to check word exist or not for 10000 words is 0.00582310000000067 milliseconds
+    #Total Number of words in Vocublary is 2392064 and Average time taken to check word exist or not for 10000 words is 0.006897899999999907 milliseconds
