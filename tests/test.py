@@ -53,5 +53,10 @@ class TamilSpellerTest(unittest.TestCase):
         #print(from_spell_checker_list)
         self.assertIn( suggested_word, from_spell_checker_list, "Auto correct is not proper")
 
+    def test_autocorrect_Norvig_2(self):
+        results = self.spellchecker.tamil_Norvig_correct_spelling("தமிழ்னாடு",[4,6])
+        assert 'தமிழ்நாடு' in results
+        self.assertEqual(len(results),12)
+
 if __name__ == "__main__":
     unittest.main()
