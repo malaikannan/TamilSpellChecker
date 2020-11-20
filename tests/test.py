@@ -1,7 +1,7 @@
 import unittest
 import timeit
-from TamilwordChecker import TamilwordChecker
-from TamilSpellingAutoCorrect import TamilSpellingAutoCorrect
+from tamilspellchecker.TamilwordChecker import TamilwordChecker
+from tamilspellchecker.TamilSpellingAutoCorrect import TamilSpellingAutoCorrect,get_data
 
 unique_word_count = 2043478
 timer = timeit.Timer()
@@ -9,8 +9,12 @@ timer = timeit.Timer()
 #####To check whether word exist or not using Bloom Filter ############
 class TamilSpellerTest(unittest.TestCase):
     def setUp(self):
-        self.tamilwordchecker = TamilwordChecker(unique_word_count,"tamil_bloom_filter.txt")
-        self.spellchecker  = TamilSpellingAutoCorrect("tamil_bloom_filter.txt","tamilwordlist.txt")
+        self.tamilwordchecker = TamilwordChecker(unique_word_count,get_data("tamil_bloom_filter.txt"))
+        self.spellchecker  = TamilSpellingAutoCorrect(get_data("tamil_bloom_filter.txt"),get_data("tamilwordlist.txt"))
+
+    def test_version(self):
+        from tamilspellchecker import VERSION
+        self.assertGreaterEqual(float(VERSION),0.10)
 
     def test_megam_bloomfilter_dictionary(self):
         self.assertTrue(self.tamilwordchecker.tamil_word_exists("மேகம்") , "Bloom Filter file is not proper")

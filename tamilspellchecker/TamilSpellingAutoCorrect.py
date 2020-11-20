@@ -1,11 +1,18 @@
-from TamilwordChecker import TamilwordChecker
 import os
-import jellyfish
 import traceback
-import tamil
+
 import jellyfish
-#from ngram.Distance import edit_distance, Dice_coeff
+import tamil
+# from ngram.Distance import edit_distance, Dice_coeff
 from solthiruthi.suggestions import norvig_suggestor
+
+from TamilwordChecker import TamilwordChecker
+
+CURRENT_DIR = os.path.dirname(__file__)
+def get_data(filename):
+    _path = os.path.join(CURRENT_DIR,'data',filename)
+    print(_path)
+    return _path
 
 class TamilSpellingAutoCorrect:
 

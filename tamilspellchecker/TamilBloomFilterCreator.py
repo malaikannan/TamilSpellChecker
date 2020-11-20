@@ -1,6 +1,7 @@
-from bloomfilter import BloomFilter
-import os
 import traceback
+
+from bloomfilter import BloomFilter
+
 
 class TamilBLoomFilterCreator:
 

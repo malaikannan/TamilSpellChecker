@@ -1,7 +1,7 @@
-import os
-import traceback
-from bloomfilter import BloomFilter
 import datetime
+
+from bloomfilter import BloomFilter
+
 
 class TamilwordChecker:
 
