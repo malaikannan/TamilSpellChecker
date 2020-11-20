@@ -1,6 +1,6 @@
 import traceback
 
-from bloomfilter import BloomFilter
+from .bloomfilter import BloomFilter
 
 
 class TamilBLoomFilterCreator:
